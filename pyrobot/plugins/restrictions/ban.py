@@ -24,17 +24,17 @@ async def ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "വേറെ ഒരാളും പൊടി പാറിപ്പിക്കുന്നു..! "
+                "Another one bites the dust"
                 f"{user_first_name}"
-                " നെ വിലക്കിയിരിക്കുന്നു."
+                "Is forbidden."
             )
         else:
             await message.reply_text(
-                "വേറെ ഒരാളും പൊടി പാറിപ്പിക്കുന്നു..! "
+                "Someone else is dusting off ..! "
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
-                " നെ വിലക്കിയിരിക്കുന്നു."
+                "Is forbidden."
             )
 
 
@@ -53,8 +53,8 @@ async def temp_ban_user(_, message):
     if until_date_val is None:
         await message.reply_text(
             (
-                "അസാധുവായ സമയ തരം വ്യക്തമാക്കി. "
-                "പ്രതീക്ഷിച്ചതു m, h, or d, കിട്ടിയത്: {}"
+                "Invalid time type specified."
+                "Expected m, h, or d, Got:"
             ).format(
                 message.command[1][-1]
             )
@@ -73,13 +73,13 @@ async def temp_ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "വേറെ ഒരാളും പൊടി പാറിപ്പിക്കുന്നു..! "
+                "Someone else is dusting off..! "
                 f"{user_first_name}"
                 f" banned for {message.command[1]}!"
             )
         else:
             await message.reply_text(
-                "വേറെ ഒരാളും പൊടി പാറിപ്പിക്കുന്നു..! "
+                "Someone else is dusting off..! "
                 f"<a href='tg://user?id={user_id}'>"
                 "ലവനെ"
                 "</a>"
