@@ -34,15 +34,15 @@ async def mute_user(_, message):
             await message.reply_text(
                 "👍🏻 "
                 f"{user_first_name}"
-                " ലവന്റെ വായടച്ചിട്ടുണ്ട്! 🤐"
+                " Lavender's mouth is shut! 🤐"
             )
         else:
             await message.reply_text(
                 "👍🏻 "
                 f"<a href='tg://user?id={user_id}'>"
-                "ലവന്റെ"
+                "Of Lavender"
                 "</a>"
-                " വായടച്ചിട്ടുണ്ട്! 🤐"
+                " Shut up! 🤐"
             )
 
 
@@ -61,8 +61,8 @@ async def temp_mute_user(_, message):
     if until_date_val is None:
         await message.reply_text(
             (
-                "അസാധുവായ സമയ തരം വ്യക്തമാക്കി. "
-                "പ്രതീക്ഷിച്ചതു m, h, or d, കിട്ടിയത്: {}"
+                "Invalid time type specified. "
+                "Expected m, h, or d, Got:{}"
             ).format(
                 message.command[1][-1]
             )
@@ -83,15 +83,15 @@ async def temp_mute_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "കുറച്ചുനേരം മിണ്ടാതിരിക്ക്! 😠"
+                "Be quiet for a while! 😠 "
                 f"{user_first_name}"
                 f" muted for {message.command[1]}!"
             )
         else:
             await message.reply_text(
-                "കുറച്ചുനേരം മിണ്ടാതിരിക്ക്! 😠"
+                "Be quiet for a while! 😠"
                 f"<a href='tg://user?id={user_id}'>"
-                "ലവന്റെ"
+                ""
                 "</a>"
                 " വായ "
                 f" muted for {message.command[1]}!"
