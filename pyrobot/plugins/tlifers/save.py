@@ -55,12 +55,12 @@ async def save_filter(client: PyroBot, message):
         )
 
         if data_type is None:
-            await status_message.edit_text("🤔 maybe note text is empty")
+            await status_message.edit_text("🤔 maybe filter text is empty")
             return
 
         if not filter_kw:
             await status_message.edit_text(
-                "എന്തിന്ന് ഉള്ള മറുപടി ആണ് എന്ന് വ്യക്തം ആക്കിയില്ല 🤔"
+                "It is not clear what the answer is 🤔"
             )
             return
 
