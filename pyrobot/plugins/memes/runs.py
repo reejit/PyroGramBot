@@ -6,7 +6,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 RUN_STRINGS = (
     "A break into my dark life \"
-    "Why did you come to this race to be reminded ","
+    Why did you come to this race to be reminded ","
     "Shajietta, we have become the underworld without even knowing it ...",
     "Call me bad ... good thunder if you want ... but don't advise .....",
     "Oh bloody villagers!",
@@ -36,7 +36,7 @@ RUN_STRINGS = (
     "I'll be there before the ice cubes fall on the fourth peg .....",
     "The stone and the wet rain that drank for her was a waste ....",
     "Tell me I love you ...",
-    "No, it's not Meenakshi from Waryampilly ... what a mole on a scooter.... "
+    "No, it's not Meenakshi from Waryampilly ... what a mole on a scooter ...."
 )
 
 
