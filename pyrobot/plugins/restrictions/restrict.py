@@ -93,6 +93,6 @@ async def temp_mute_user(_, message):
                 f"<a href='tg://user?id={user_id}'>"
                 ""
                 "</a>"
-                " വായ "
+                "mouth"
                 f" muted for {message.command[1]}!"
             )
