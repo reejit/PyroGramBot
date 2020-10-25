@@ -10,7 +10,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
 ALIVE = "I am alive...."
-HELP = "CAACAgEAAxkBAAI6bl-U-NAktEKzRRZ7iYH7i42JPvpNAAIVAQACnqupRIDFHkT_-uZdGwQ"
+HELP = "No one is gonna help you Find yourself 😎😎"
 REPO = "FUCK OFF"
 # -- Constants End -- #
 
@@ -25,7 +25,7 @@ async def check_alive(_, message):
 
 @Client.on_message(filters.command("help", COMMAND_HAND_LER) & f_onw_fliter)
 async def help_me(_, message):
-    await message.reply_sticker(HELP)
+    await message.reply_text(HELP)
 
 
 @Client.on_message(filters.command("ping", COMMAND_HAND_LER) & f_onw_fliter)
