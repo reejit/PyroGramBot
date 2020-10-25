@@ -9,10 +9,9 @@ from pyrobot import (
 from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
-ALIVE = "ചത്തിട്ടില്ലാ..."
-HELP = "CAADAgAD6AkAAowucAABsFGHedLEzeUWBA"
-REPO = ("User / Bot is available on GitHub:\n"
-        "https://github.com/SpEcHiDe/PyroGramBot")
+ALIVE = "I am alive...."
+HELP = "CAACAgEAAxkBAAEGggNflO8z7TQFD2b3NggX6m6_ds8GYAACyQADLruoRBU8Hy1diTHPGwQ"
+REPO = "FUCK OFF"
 # -- Constants End -- #
 
 
@@ -32,7 +31,7 @@ async def help_me(_, message):
 @Client.on_message(filters.command("ping", COMMAND_HAND_LER) & f_onw_fliter)
 async def ping(_, message):
     start_t = time.time()
-    rm = await message.reply_text("...")
+    rm = await message.reply_text("wait a bit...")
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"Pong!\n{time_taken_s:.3f} ms")
