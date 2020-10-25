@@ -10,7 +10,7 @@ from pyrobot.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
 ALIVE = "I am alive...."
-HELP = "CAACAgEAAxkBAAEGggNflO8z7TQFD2b3NggX6m6_ds8GYAACyQADLruoRBU8Hy1diTHPGwQ"
+HELP = "CAACAgEAAxkBAAI6bl-U-NAktEKzRRZ7iYH7i42JPvpNAAIVAQACnqupRIDFHkT_-uZdGwQ"
 REPO = "FUCK OFF"
 # -- Constants End -- #
 
