@@ -48,7 +48,7 @@ async def list_filters(client: PyroBot, message):
             msg = ""
         msg += f"{flt_name}"
     if msg == msg_p:
-        await status_message.edit_text("There are no notes in this chat.")
+        await status_message.edit_text("There are no filters in this chat.")
 
     elif len(msg) != 0:
         await message.reply_text(msg)
